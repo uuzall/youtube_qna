@@ -1,6 +1,6 @@
 # YouTube Video QnA Bot 
 
-In this repo, I wanted to experience and create something new using LLaMA-2. I read somewhere about making a bot that takes in YouTube videos and embeds them in a vector database. Everything after that is basic QnA usign context, where you search the database using the embedding for the questions asked. Then, the question and the context are sent to LLaMA-2 who gives an answer. 
+In this repo, I wanted to experience creating something new using LLaMA-2. I read somewhere about making a bot that takes in YouTube videos and embeds them in a vector database. Everything after that is basic QnA usign context, where you search the database using the embedding for the questions asked. Then, the question and the context are sent to LLaMA-2 who gives an answer. 
 
 It worked amazingly especially for video essays where a person talks extensively about one topic. However there were some things to consider, like, 
 * If you have a podcast or a video where 2+ people talk then there is no way to tell them apart just from the video transcript, so, LLaMA-2 gets incredibly confused as to who is talking and gives weird answers sometimes. Not too weird that what it says is wrong but it mixes the personalities of the multiple people talking into 1 person. Also, a future project inspiration is to solve this by using audio classifier to classify different voices into "person1", "person2", and so on. 
